@@ -1,5 +1,6 @@
 # String2Base64
-Ejemplo para convertir un texto a Base64 y convertir Base64 a texto
+Ejemplo para convertir un texto a Base64 y convertir Base64 a texto.
+En la solución está el ejemplo de como usarlo.
 
         /// <summary>
         /// Convierte string en Base64 a texto
