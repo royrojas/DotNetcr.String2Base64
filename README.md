@@ -2,6 +2,7 @@
 Ejemplo para convertir un texto a Base64 y convertir Base64 a texto.
 En la solución está el ejemplo de como usarlo.
 
+## C#
         /// <summary>
         /// Convierte string en Base64 a texto
         /// </summary>
@@ -25,3 +26,17 @@ En la solución está el ejemplo de como usarlo.
             string myBase64 = Convert.ToBase64String(myByte);
             return myBase64;
         }
+
+## VB
+
+    Public Shared Function DecodeBase64ToString(valor As String) As String
+        Dim myBase64ret As Byte() = Convert.FromBase64String(valor)
+        Dim myStr As String = System.Text.Encoding.UTF8.GetString(myBase64ret)
+        Return myStr
+    End Function
+
+    Public Shared Function EncodeStrToBase64(valor As String) As String
+        Dim myByte As Byte() = System.Text.Encoding.UTF8.GetBytes(valor)
+        Dim myBase64 As String = Convert.ToBase64String(myByte)
+        Return myBase64
+    End Function
